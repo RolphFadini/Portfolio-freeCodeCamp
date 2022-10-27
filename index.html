@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact-info">Contact</a>
+        </nav>
+    </header>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    
+    <main>
+        <section id="welcome-section">
+            <h1>Hey I'm Rolph</h1>
+            <hr>
+            <h3>a web developer</h3>
+        </section>
+        <section id="projects">
+            <div class="project-title">
+                <h2>These are some of my projects</h2>
+                <hr>
+            </div>
+            <div class="gallery">
+                <a href="#" class="cat-img-box"><img src="https://pbs.twimg.com/media/FgAAe5IWYAEmQZJ?format=jpg&name=small" alt="curious cat"><span class="cat-text">Curious cat</span></a>
+                <a href="#" class="cat-img-box"><img src="https://pbs.twimg.com/media/FgAAfB-XgAMDsNG?format=jpg&name=900x900" alt="cute cat"><span class="cat-text">Cute cat</span></a>
+                <a href="#" class="cat-img-box"><img src="https://pbs.twimg.com/media/FgAAfZjWYAEDCCs?format=jpg&name=small" alt="silly cat"><span class="cat-text">Silly cat</span></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact-info">
+            <div id="contact-title">
+                <h2>Let's work together</h2>
+                <p>How do you take your coffee?</p>
+            </div>
+            <div id="contact-links">
+                <a href="linkedin" target="_blank" class="link">LinkedIn</a>
+                <a href="github" id="profile-link" target="_blank" class="link">GitHub</a>
+                <a href="email" target="_blank" class="link">Email</a>
+            </div>
+        </section>
+        <div class="credit">
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            <p class="credit">© Created for Rolph da Luz Fadini</p>
+        </div>
+    </footer>
+</body>
+</html>
